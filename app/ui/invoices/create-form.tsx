@@ -16,7 +16,6 @@ import { Button } from "../button";
 export default function Form({ customers }: { customers: CustomerField[] }) {
   const initialState = { message: null, errors: {} };
   const [state, dispatch] = useFormState(createInvoice, initialState);
-  console.log('state: ', state);
 
   return (
     <form action={dispatch}>
